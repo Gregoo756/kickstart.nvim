@@ -1012,5 +1012,14 @@ require('lazy').setup({
   },
 })
 
+
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
+
+
+-- Gregoo settings <3
+vim.opt.number = true
+vim.opt.relativenumber = true
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
