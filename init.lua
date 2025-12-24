@@ -1023,26 +1023,3 @@ vim.opt.relativenumber = true
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
-
--- Run Commands (C, C++, Python, ASM)
-local map = vim.keymap.set
-
--- C (requiers gcc)
-map("n", "<leader>c",
-    ":!gcc % -o %< && ./%< || echo 'Compilation failed'<CR>",
-    { desc = "Compile & run C program" })
-
--- C++ (requiers g++)
-map("n", "<leader>v",
-    ":!g++ % -o %< && ./%< || echo 'Compilation failed'<CR>",
-    { desc = "Compile & run C++ program" })
-
--- Python (requiers python3)
-map("n", "<leader>b",
-    ":!python3 %<CR>",
-    { desc = "Run Python file" })
-
--- ASM (requires nasm)
-map("n", "<leader>n",
-    ":!nasm -f elf64 % -o %<.o && ld %<.o -o %< && ./%< || echo 'Assembly failed'<CR>",
-    { desc = "Assemble & run ASM program" })
