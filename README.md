@@ -320,3 +320,4 @@ asdf reshim neovim
 </details>
 
 </details>
+<!-- ignore this i just wanna see if gentoo is set up prop -->
